@@ -1,4 +1,4 @@
 
 fn main() {
-   todo_list::run();    
+   todo_list::run(false);    
 }
