@@ -3,4 +3,4 @@
 ![plot](help.png)
 ## I still need to improve error handling in the code and refactor it
 ## Gif of app:
-![til](todolist.gif)
+![til](todogif.gif)
