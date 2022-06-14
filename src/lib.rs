@@ -4,8 +4,12 @@ use std::{io::{self, Write, Error}, fs::OpenOptions};
 pub fn run(show_index : bool) {
     let mut tasks = load_from_saved().unwrap_or_default();
     //read the user input
-
-    println!("Here are all the items:");
+    if tasks.len() == 0 {
+        println!("No tasks todo: add some! type help for more info");
+    } else {
+        println!("{} tasks todo:", tasks.len());
+    }
+        
     let mut index = 0;
     for task in &tasks {
         if show_index {
